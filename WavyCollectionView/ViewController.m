@@ -8,7 +8,10 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDataSource>
+
+@property (weak, nonatomic) IBOutlet UICollectionView *wavyCollectionView;
+
 
 @end
 
@@ -16,7 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
@@ -25,5 +28,26 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+-(NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
+    return 1;
+}
+
+-(NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
+    return 40;
+}
+
+- (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
+    
+    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:@"Cell" forIndexPath:indexPath];
+    
+    UILabel *label = (UILabel*)[cell viewWithTag:1];
+
+    label.text = [NSString stringWithFormat:@"Section: %ld, Item: %ld",indexPath.section, indexPath.item];
+    
+    
+    return cell;
+    
+}
 
 @end

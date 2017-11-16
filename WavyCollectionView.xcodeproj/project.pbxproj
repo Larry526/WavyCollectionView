@@ -101,15 +101,11 @@
 		0516969F1FBDE9A7004A3103 /* WavyCollectionView */ = {
 			isa = PBXGroup;
 			children = (
-				051696A01FBDE9A7004A3103 /* AppDelegate.h */,
-				051696A11FBDE9A7004A3103 /* AppDelegate.m */,
 				051696A31FBDE9A7004A3103 /* ViewController.h */,
 				051696A41FBDE9A7004A3103 /* ViewController.m */,
 				051696A61FBDE9A7004A3103 /* Main.storyboard */,
-				051696A91FBDE9A7004A3103 /* Assets.xcassets */,
-				051696AB1FBDE9A7004A3103 /* LaunchScreen.storyboard */,
 				051696AE1FBDE9A7004A3103 /* Info.plist */,
-				051696AF1FBDE9A7004A3103 /* main.m */,
+				051696D31FBDE9C3004A3103 /* Supporting Files */,
 			);
 			path = WavyCollectionView;
 			sourceTree = "<group>";
@@ -130,6 +126,18 @@
 				051696C61FBDE9A7004A3103 /* Info.plist */,
 			);
 			path = WavyCollectionViewUITests;
+			sourceTree = "<group>";
+		};
+		051696D31FBDE9C3004A3103 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				051696A91FBDE9A7004A3103 /* Assets.xcassets */,
+				051696AF1FBDE9A7004A3103 /* main.m */,
+				051696A01FBDE9A7004A3103 /* AppDelegate.h */,
+				051696A11FBDE9A7004A3103 /* AppDelegate.m */,
+				051696AB1FBDE9A7004A3103 /* LaunchScreen.storyboard */,
+			);
+			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,7 +444,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LL.WavyCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -450,7 +458,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = LL.WavyCollectionView;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};
