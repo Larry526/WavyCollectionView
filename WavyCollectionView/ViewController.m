@@ -7,6 +7,7 @@
 //
 
 #import "ViewController.h"
+#import "WavyFlowLayout.h"
 
 @interface ViewController () <UICollectionViewDataSource>
 
@@ -43,7 +44,7 @@
     
     UILabel *label = (UILabel*)[cell viewWithTag:1];
 
-    label.text = [NSString stringWithFormat:@"Section: %ld, Item: %ld",indexPath.section, indexPath.item];
+    label.text = [NSString stringWithFormat:@"%ld - %ld",indexPath.section, indexPath.item];
     
     
     return cell;
